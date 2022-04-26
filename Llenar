@@ -1,0 +1,33 @@
+// procedimiento para llenar una matriz
+void SUMA_DIAGONALES (short Matriz[][100], short &NF, short &NC)
+{
+    // variables
+    short i, j, Cont;
+
+    cout << "Ingrese la cantidad de filas ";
+    cin >> NF;
+
+    cout << "Ingrese la cantidad de columnas ";
+    cin >> NC;
+
+    Cont = 1;
+
+    for (i = 0; i < NF; i++)
+    {
+        for (j = 0; j < NC; j++)
+        {
+            cout << "Ingrese el elemento " << Cont << ": ";
+            cin >> Matriz[i][j];
+            Cont ++;
+        }
+    }
+    
+    // mostrar la matriz
+    for (i = 0; i < NF; i++)
+    {
+        for (j = 0; j < NC; j++)
+        {
+            cout << Matriz[i][j];
+        }
+        cout << endl;
+    }
