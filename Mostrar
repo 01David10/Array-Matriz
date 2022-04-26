@@ -1,0 +1,16 @@
+// procedimiento para mostrar matriz
+void MOSTRAR_M (short Matriz[][100], short NF, short NC)
+{
+    short i, j;
+
+    for (i = 0; i < NF; i++)
+    {
+        for (j = 0; j < NC; j++)
+        {
+            cout << Matriz[i][j];
+        }
+        cout << endl;
+    }
+}
+
+// solo se cambio los parametros de entrada y el nombre de la matriz
